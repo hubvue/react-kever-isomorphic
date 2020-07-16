@@ -24,9 +24,9 @@
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
-    "@types/cheerio": "^0.22.21",
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
     "@types/react-router-dom": "^5.1.5",
     "babel-loader": "^8.1.0",
     "html-webpack-plugin": "^4.3.0",
@@ -40,8 +40,6 @@
     "webpack-node-externals": "^2.5.0"
   },
   "dependencies": {
-    "@types/react-redux": "^7.1.9",
-    "cheerio": "^1.0.0-rc.3",
     "kever": "^0.6.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
