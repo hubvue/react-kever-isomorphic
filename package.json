@@ -1,0 +1,52 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ssr-client:prod": "WEBPACK_ENV=client webpack --mode production",
+    "ssr-client:dev": "WEBPACK_ENV=client  webpack-dev-server --mode development",
+    "ssr-server:prod": "WEBPACK_ENV=server webpack --mode production",
+    "ssr-server:dev": "WEBPACK_ENV=server webpack --mode development",
+    "server:prod": "cd ./lib & NODE_ENV=production node ./lib/index.js",
+    "server:dev": "NODE_ENV=development ts-node-dev ./src/app/index.ts",
+    "server:build": "tsc -p tsconfig-server.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/cheerio": "^0.22.21",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "isomorphic-fetch": "^2.2.1",
+    "koa-static": "^5.0.0",
+    "ts-node-dev": "^1.0.0-pre.51",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-node-externals": "^2.5.0"
+  },
+  "dependencies": {
+    "@types/react-redux": "^7.1.9",
+    "cheerio": "^1.0.0-rc.3",
+    "kever": "^0.6.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5"
+  }
+}

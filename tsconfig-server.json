@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "target": "es2015",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "outDir": "./lib",
+    "noEmitOnError": true,
+    "jsx": "react"
+  },
+  "include": ["./src/app/"],
+  "exclude": ["./lib", "node_modules/"]
+}
