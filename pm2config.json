@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "name": "react-kever-isomorphic",
+      "script": "./lib/index.js",
+      "env_production": {
+        "NODE_ENV": "production"
+      },
+      "env_pre": {
+        "NODE_ENV": "pre"
+      }
+    }
+  ]
+}

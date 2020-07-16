@@ -10,7 +10,8 @@
     "ssr-server:dev": "WEBPACK_ENV=server webpack --mode development",
     "server:prod": "cd ./lib & NODE_ENV=production node ./lib/index.js",
     "server:dev": "NODE_ENV=development ts-node-dev ./src/app/index.ts",
-    "server:build": "tsc -p tsconfig-server.json"
+    "server:build": "tsc -p tsconfig-server.json",
+    "server:pm2": "pm2 start pm2config.json --env production"
   },
   "keywords": [],
   "author": "",
